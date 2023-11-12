@@ -1,0 +1,1 @@
+/opt/cray/pe/gcc/11.2.0/bin/c++ -O3 -DNDEBUG CMakeFiles/mpi_2dmesh.dir/mpi_2dmesh.cpp.o -o mpi_2dmesh  -Wl,-rpath,/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib/libmpi_gnu_91.so 
