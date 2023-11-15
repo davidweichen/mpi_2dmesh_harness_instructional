@@ -1,3 +1,0 @@
-/pscratch/sd/d/david/mpi_2dmesh_harness_instructional/build/CMakeFiles/rebuild_cache.dir
-/pscratch/sd/d/david/mpi_2dmesh_harness_instructional/build/CMakeFiles/edit_cache.dir
-/pscratch/sd/d/david/mpi_2dmesh_harness_instructional/build/CMakeFiles/mpi_2dmesh.dir

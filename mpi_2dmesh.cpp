@@ -40,10 +40,10 @@
 
 #include "mpi_2dmesh.hpp"  // for AppState and Tile2D class
 
-#define DEBUG_TRACE 0 
+#define DEBUG_TRACE 1 
 
 int messageSend = 0;
-double dataMovement = 0.0;
+int dataMovement = 0;
 
 int
 parseArgs(int ac, char *av[], AppState *as)
@@ -398,7 +398,7 @@ sendStridedBuffer(float *srcBuf,
 
    
    messageSend++;
-   dataMovement += sendWidth * sendHeight * sizeof(float);
+   dataMovement += sendWidth * sendHeight;
 
 }
 
@@ -429,7 +429,7 @@ recvStridedBuffer(float *dstBuf,
 
    //to count the message that send to rank 0
    messageSend++;
-   dataMovement += expectedWidth * expectedHeight * sizeof(float);
+   dataMovement += expectedWidth * expectedHeight
 }
 
 
