@@ -429,7 +429,7 @@ recvStridedBuffer(float *dstBuf,
 
    //to count the message that send to rank 0
    messageSend++;
-   dataMovement += expectedWidth * expectedHeight
+   dataMovement += expectedWidth * expectedHeight;
 }
 
 
