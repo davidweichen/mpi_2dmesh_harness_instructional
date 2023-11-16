@@ -207,3 +207,19 @@ Mac-side Quartz configuration issue.
 
 If this issue affects you, you might want to consider trying NX to remote desktop
 to Perlmutter. See https://docs.nersc.gov/connect/nx/ for more information.
+
+# Build and Run
+
+After login perlmutter do:
+    module load cpu
+    cd $SCRATCH
+
+cd into the mpi-2dmesh-harness directory, then:  
+
+    mkdir build  
+    cd build  
+    cmake  
+    make
+    sbatch ../scripts/run_script.sh ./mpi_2dmesh
+
+The input data were use the data directory from the HW6 code harness
